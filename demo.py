@@ -29,12 +29,14 @@ aTurtle.left(90)     # Vrider sköldpaddan 90 grader
 aTurtle.forward(100)  # Flyttar sköldpaddan framåt igen
 
 # sköldpaddan kan även flyttas i ett mönster i en loop.
-for i in range(10):
+for i in range(15):
     randomColor(aTurtle)  # Här slumpas färgen fram
     aTurtle.forward(50)
     aTurtle.left(30)
 
-# Här tas den andra sköldpaddan i bruk
+# # Här tas den andra sköldpaddan i bruk
+bTurtle.shape("turtle")
+bTurtle.color("red")
 bTurtle.penup()  # Nu kan sköldpaddan flyttas utan att en linje ritas
 bTurtle.goto(-100, -50)  # Flytta sköldpaddan
 bTurtle.pendown()  # Nu ritas linje igen vid förflyttning
